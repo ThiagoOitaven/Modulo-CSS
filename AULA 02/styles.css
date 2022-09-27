@@ -1,0 +1,87 @@
+.receita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    display: block;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 25vw;
+    max-width: fit-content;
+    margin-left: 2vw;
+    margin-bottom: 5px;
+    min-height: fit-content;
+    max-height: fit-content;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+p {
+    width: 50vw;
+    text-align: justify;
+    padding-bottom: 1px;
+}
+
+ul>li.importante {
+    color: crimson;
+    font-weight: bold;
+}
+
+ul>li.importante::marker {
+    color: black;
+}
+
+.prato {
+    height: 450px;
+    width: 500px;
+    object-fit: cover;
+}
+
+input[type="text"] {
+    border-radius: 5px;
+}
+
+input[type="email"] {
+    border-radius: 5px;
+}
+
+form {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter>.box {
+    align-self: center;
+}

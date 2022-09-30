@@ -1,0 +1,44 @@
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main>div {
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+}
+
+#scroll {
+    background-color: green;
+    overflow: scroll;
+}
+
+#hidden {
+    background-color: burlywood;
+    overflow: hidden;
+
+}
+
+#auto {
+    background-color: rgb(47, 47, 255);
+    overflow: auto;
+}
+
+#visible {
+    background-color: chartreuse;
+    overflow: visible;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style-type: none;
+}

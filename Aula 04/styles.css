@@ -1,0 +1,65 @@
+.box {
+    border: 1px solid blue;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+    flex-wrap: wrap;
+}
+
+div.box {
+    height: 42vh;
+    width: 47vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coloredbox {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#bluebox {
+    background-color: blue;
+}
+
+#orangebox1,
+#orangebox2,
+#orangebox3 {
+    background-color: rgba(255, 166, 0, 0.692);
+}
+
+#greenbox1,
+#greenbox2,
+#greenbox3 {
+    background-color: green;
+}
+
+#greenbox1 {
+    position: relative;
+    top: 30px;
+    left: 200px;
+}
+
+#greenbox2 {
+    position: absolute;
+    top: 80vh;
+    left: 150px;
+}
+
+#greenbox3 {
+    position: fixed;
+    left: 60vw;
+    top: 70vh;
+}

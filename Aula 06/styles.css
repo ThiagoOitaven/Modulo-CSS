@@ -43,6 +43,7 @@ li {
 
 .lista-horizontal>li {
     font-weight: bold;
+    list-style-type: decimal;
 }
 
 table {

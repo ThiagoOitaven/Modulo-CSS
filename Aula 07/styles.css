@@ -1,0 +1,50 @@
+body {
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+    color: white;
+    background-color: pink;
+}
+
+.flex {
+    display: flex;
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    height: 7vh;
+}
+
+main {
+    gap: 25px;
+}
+
+.aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkcyan;
+    width: 25vw;
+    height: 75vh;
+}
+
+figure {
+    margin: 0;
+}
+
+article {
+    background-color: #c36dee;
+    width: 75vw;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.placeholder {
+    width: 20vw;
+    padding: 0 0 15px 0;
+}

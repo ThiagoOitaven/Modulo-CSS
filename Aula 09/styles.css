@@ -129,6 +129,10 @@ nav {
     color: #6c6c6c;
 }
 
+.nav {
+    gap: 35px;
+}
+
 nav a:hover {
     color: #000;
 }
@@ -156,18 +160,20 @@ nav a:hover {
     height: 90vh;
     width: 100%;
     align-items: center;
+    justify-content: center;
     position: relative;
     z-index: -1;
     transform: translateZ(-10px) scale(2);
 }
 
 .hero-card-text {
-    width: 50%;
+    margin-left: 9%;
+    width: 30%;
     justify-content: center;
 }
 
 .hero-card-img {
-    width: 50%;
+    width: 45%;
     height: 500px;
     background-image: url(./src/images/hero-card-img.png);
     background-size: 800px;
@@ -616,6 +622,8 @@ footer>a {
     perspective: 10px;
 }
 
+/* Media Queries */
+
 @media (max-width: 1600px) {
     .poster {
         justify-content: space-around;
@@ -670,7 +678,6 @@ footer>a {
     }
 }
 
-
 @media (max-width: 1100px) {
 
 
@@ -678,7 +685,7 @@ footer>a {
         justify-content: space-between;
     }
 
-    .header>.logo {
+    .header>a {
         position: absolute;
         left: 5vw;
     }

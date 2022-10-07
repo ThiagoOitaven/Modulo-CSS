@@ -270,11 +270,11 @@ nav a:hover {
 }
 
 .text-box p {
-    margin-top: 20px;
+    padding-top: 20px;
     color: #6c6c6c;
     line-height: 24px;
     text-align: left;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 14px;
 }

@@ -1,0 +1,201 @@
+:root {
+    --Blinky: #ff0000;
+    --Pinky: #ffc0cb;
+    --Inky: #00ffff;
+    --Clyde: #ffa500;
+    --Mouth: transparent;
+    --Eye: #0d2bd7;
+    --Eye-location: 60px;
+    --Mouth-clip: polygon(100% 74%, 44% 48%, 100% 21%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.ghost {
+    height: 200px;
+    margin: 25px;
+    position: relative;
+    width: 200px;
+}
+
+.head {
+    height: 100px;
+    position: relative;
+    width: 152px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.blinky>.head {
+    background: var(--Blinky);
+
+}
+
+.pinky>.head {
+    background: var(--Pinky);
+
+}
+
+.inky>.head {
+    background: var(--Inky);
+
+}
+
+.clyde>.head {
+    background: var(--Clyde);
+
+}
+
+.eye,
+.eyeBack {
+    position: relative;
+    border-radius: 100%;
+}
+
+.eyeBack {
+    background: #FFF;
+    height: 50px;
+    width: 50px;
+}
+
+.eyeBack:first-child {
+    float: left;
+    margin: 50px 0 0 25px;
+}
+
+.eyeBack:last-child {
+    float: right;
+    margin: 50px 25px 0 0;
+}
+
+.eye {
+    background: var(--Eye);
+    height: 25px;
+    margin: 23%;
+    width: 25px;
+}
+
+.legs {
+    border-bottom: 40px solid transparent;
+    display: block;
+    float: left;
+    height: 40px;
+    width: 0;
+}
+
+.blinky>.legs {
+    border-right: 38px solid var(--Blinky);
+    border-left: 38px solid var(--Blinky);
+}
+
+.pinky>.legs {
+    border-right: 38px solid var(--Pinky);
+    border-left: 38px solid var(--Pinky);
+}
+
+.inky>.legs {
+    border-right: 38px solid var(--Inky);
+    border-left: 38px solid var(--Inky);
+}
+
+.clyde>.legs {
+    border-right: 38px solid var(--Clyde);
+    border-left: 38px solid var(--Clyde);
+}
+
+.mouth {
+    position: absolute;
+    left: 5px;
+    width: 135px;
+    height: 50px;
+    overflow: hidden;
+
+}
+
+.circle {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background: radial-gradient(16px, transparent, transparent 4px, var(--Mouth) 4px, var(--Mouth) 10px, transparent 11px);
+    background-size: 30px 40px;
+}
+
+.circle2 {
+    top: 20px;
+    left: 15px;
+    background-position: 0px -20px;
+}
+
+.pacman {
+    align-self: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #F2D648;
+    position: relative;
+    margin-top: 20px;
+}
+
+.pacman_eye {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 25px;
+    right: var(--Eye-location);
+    background: #000000;
+}
+
+.pacman_mouth {
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: var(--Mouth-clip);
+}
+
+.animate {
+    animation: moving 13s ease-in-out infinite;
+}
+
+@keyframes moving {
+
+    from {
+        transform: translateX(-80vw);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(80vw);
+        opacity: .7;
+    }
+
+    to {
+        transform: translateX(-85vw);
+        --Blinky: #00008b;
+        --Pinky: #00008b;
+        --Inky: #00008b;
+        --Clyde: #00008b;
+        --Mouth: #ffffff;
+        --Eye: #ffffff;
+        --Eye-location: 100px;
+        --Mouth-clip: polygon(0% 74%, 56% 50%, 0% 21%);
+        opacity: 1;
+    }
+
+}

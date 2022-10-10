@@ -10,10 +10,6 @@
     transition: all 400ms ease-in-out;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: Poppins, sans-serif;
     color: #6c6c6c;
@@ -50,29 +46,6 @@ body {
 
 .font-400 {
     font-weight: 400;
-}
-
-.move-up {
-    animation: move-up 700ms backwards paused ease-in-out;
-}
-
-.move-right-to-left {
-    animation: right-to-left 700ms backwards paused ease-in-out;
-}
-
-.move-left-to-right {
-    animation: left-to-right 700ms backwards paused ease-in-out;
-}
-
-.poster:hover .move-up,
-.store:hover .move-up,
-.featured:hover .move-left-to-right,
-.featured:hover .move-right-to-left,
-.poster-bottom:hover .move-right-to-left,
-.news:hover .move-up,
-.contact:hover .move-right-to-left {
-    animation-fill-mode: forwards;
-    animation-play-state: running;
 }
 
 h1,
@@ -174,6 +147,7 @@ figcaption {
 }
 
 /* Header */
+
 header {
     position: sticky;
     top: 0;
@@ -260,6 +234,7 @@ nav a:hover {
     color: #fff;
     line-height: 22px;
     letter-spacing: 1px;
+    align-self: flex-start;
 }
 
 .hero-card-button:hover {
@@ -367,6 +342,10 @@ nav a:hover {
 
 .store-title {
     padding: 25px 0;
+}
+
+.store .hero-card-button {
+    align-self: center;
 }
 
 .collection-container a {
@@ -543,6 +522,7 @@ footer>a {
     height: 100vh;
     overflow-x: hidden;
     perspective: 10px;
+    scroll-behavior: smooth;
 }
 
 .ParallaxContainer {
@@ -707,6 +687,31 @@ footer>a {
         align-items: center;
         gap: 25px;
     }
+}
+
+/* animation */
+
+.move-up {
+    animation: move-up 700ms backwards paused ease-in-out;
+}
+
+.move-right-to-left {
+    animation: right-to-left 700ms backwards paused ease-in-out;
+}
+
+.move-left-to-right {
+    animation: left-to-right 700ms backwards paused ease-in-out;
+}
+
+.poster:hover .move-up,
+.store:hover .move-up,
+.featured:hover .move-left-to-right,
+.featured:hover .move-right-to-left,
+.poster-bottom:hover .move-right-to-left,
+.news:hover .move-up,
+.contact:hover .move-right-to-left {
+    animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 
 @keyframes move-up {

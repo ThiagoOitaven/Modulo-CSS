@@ -1,9 +1,11 @@
 body {
     height: 100vh;
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: teal;
+    background-color: #01680f;
 }
 
 .dice-container {
@@ -17,8 +19,8 @@ body {
     height: 100%;
     transform-style: preserve-3d;
     position: relative;
-    animation: rotate 5s infinite ease-in-out;
-    /* transform: rotate3d(1, 1, 0, 35deg) */
+    /* animation: rotate 5s infinite ease-in-out; */
+    transform: rotate3d(1, 1, 0, 51deg)
 }
 
 .side {
